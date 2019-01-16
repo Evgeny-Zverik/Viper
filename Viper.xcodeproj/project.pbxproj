@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844BF09E21EE1958004CD6CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF09D21EE1958004CD6CE /* AppDelegate.swift */; };
+		844BF0A021EE1958004CD6CE /* FruitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF09F21EE1958004CD6CE /* FruitListViewController.swift */; };
+		844BF0A321EE1958004CD6CE /* FruitList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844BF0A121EE1958004CD6CE /* FruitList.storyboard */; };
+		844BF0A621EE1958004CD6CE /* Viper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0A421EE1958004CD6CE /* Viper.xcdatamodeld */; };
+		844BF0A821EE1959004CD6CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844BF0A721EE1959004CD6CE /* Assets.xcassets */; };
+		844BF0AB21EE1959004CD6CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844BF0A921EE1959004CD6CE /* LaunchScreen.storyboard */; };
+		844BF0B621EE1959004CD6CE /* ViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0B521EE1959004CD6CE /* ViperTests.swift */; };
+		844BF0C221EE1E5A004CD6CE /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0C121EE1E5A004CD6CE /* Common.swift */; };
+		844BF0C721EE1FB9004CD6CE /* FruitListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0C621EE1FB9004CD6CE /* FruitListInteractor.swift */; };
+		844BF0CA21EE1FDD004CD6CE /* FruitListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0C921EE1FDD004CD6CE /* FruitListPresenter.swift */; };
+		844BF0CD21EE2079004CD6CE /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0CC21EE2079004CD6CE /* Fruit.swift */; };
+		844BF0D021EE20A7004CD6CE /* FruitListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0CF21EE20A7004CD6CE /* FruitListRouter.swift */; };
+		844BF0D521EF2E96004CD6CE /* FruitListWireRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0D421EF2E96004CD6CE /* FruitListWireRouterProtocol.swift */; };
+		844BF0D721EF2FDD004CD6CE /* FruitListInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0D621EF2FDD004CD6CE /* FruitListInputInteractorProtocol.swift */; };
+		844BF0D921EF3138004CD6CE /* FruitListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0D821EF3138004CD6CE /* FruitListPresenterProtocol.swift */; };
+		844BF0DB21EF35AD004CD6CE /* FruitListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0DA21EF35AD004CD6CE /* FruitListViewProtocol.swift */; };
+		844BF0DD21EF35DA004CD6CE /* FruitListOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0DC21EF35DA004CD6CE /* FruitListOutputInteractorProtocol.swift */; };
+		844BF0E021EF4AC3004CD6CE /* FruitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0DF21EF4AC3004CD6CE /* FruitDetailViewController.swift */; };
+		844BF0E321EF4ADB004CD6CE /* FruitDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844BF0E221EF4ADB004CD6CE /* FruitDetail.storyboard */; };
+		844BF0E621EF4EA3004CD6CE /* FruitDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0E521EF4EA3004CD6CE /* FruitDetailRouter.swift */; };
+		844BF0E821EF4EC8004CD6CE /* FruitDetailRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0E721EF4EC8004CD6CE /* FruitDetailRouterProtocol.swift */; };
+		844BF0EB21EF4FE8004CD6CE /* FruitDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0EA21EF4FE8004CD6CE /* FruitDetailPresenterProtocol.swift */; };
+		844BF0ED21EF500C004CD6CE /* FruitDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0EC21EF500C004CD6CE /* FruitDetailViewProtocol.swift */; };
+		844BF0EF21EF506B004CD6CE /* FruitDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BF0EE21EF506A004CD6CE /* FruitDetailPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		844BF0B221EE1959004CD6CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844BF09221EE1958004CD6CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 844BF09921EE1958004CD6CE;
+			remoteInfo = Viper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		844BF09A21EE1958004CD6CE /* Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		844BF09D21EE1958004CD6CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		844BF09F21EE1958004CD6CE /* FruitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListViewController.swift; sourceTree = "<group>"; };
+		844BF0A221EE1958004CD6CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FruitList.storyboard; sourceTree = "<group>"; };
+		844BF0A521EE1958004CD6CE /* Viper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Viper.xcdatamodel; sourceTree = "<group>"; };
+		844BF0A721EE1959004CD6CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		844BF0AA21EE1959004CD6CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		844BF0AC21EE1959004CD6CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844BF0B121EE1959004CD6CE /* ViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		844BF0B521EE1959004CD6CE /* ViperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperTests.swift; sourceTree = "<group>"; };
+		844BF0B721EE1959004CD6CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844BF0C121EE1E5A004CD6CE /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		844BF0C621EE1FB9004CD6CE /* FruitListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListInteractor.swift; sourceTree = "<group>"; };
+		844BF0C921EE1FDD004CD6CE /* FruitListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListPresenter.swift; sourceTree = "<group>"; };
+		844BF0CC21EE2079004CD6CE /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		844BF0CF21EE20A7004CD6CE /* FruitListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListRouter.swift; sourceTree = "<group>"; };
+		844BF0D421EF2E96004CD6CE /* FruitListWireRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListWireRouterProtocol.swift; sourceTree = "<group>"; };
+		844BF0D621EF2FDD004CD6CE /* FruitListInputInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		844BF0D821EF3138004CD6CE /* FruitListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListPresenterProtocol.swift; sourceTree = "<group>"; };
+		844BF0DA21EF35AD004CD6CE /* FruitListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListViewProtocol.swift; sourceTree = "<group>"; };
+		844BF0DC21EF35DA004CD6CE /* FruitListOutputInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		844BF0DF21EF4AC3004CD6CE /* FruitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewController.swift; sourceTree = "<group>"; };
+		844BF0E221EF4ADB004CD6CE /* FruitDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FruitDetail.storyboard; sourceTree = "<group>"; };
+		844BF0E521EF4EA3004CD6CE /* FruitDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailRouter.swift; sourceTree = "<group>"; };
+		844BF0E721EF4EC8004CD6CE /* FruitDetailRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailRouterProtocol.swift; sourceTree = "<group>"; };
+		844BF0EA21EF4FE8004CD6CE /* FruitDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		844BF0EC21EF500C004CD6CE /* FruitDetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewProtocol.swift; sourceTree = "<group>"; };
+		844BF0EE21EF506A004CD6CE /* FruitDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		844BF09721EE1958004CD6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844BF0AE21EE1959004CD6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		844BF09121EE1958004CD6CE = {
+			isa = PBXGroup;
+			children = (
+				844BF09C21EE1958004CD6CE /* Viper */,
+				844BF0B421EE1959004CD6CE /* ViperTests */,
+				844BF09B21EE1958004CD6CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		844BF09B21EE1958004CD6CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				844BF09A21EE1958004CD6CE /* Viper.app */,
+				844BF0B121EE1959004CD6CE /* ViperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		844BF09C21EE1958004CD6CE /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				844BF09D21EE1958004CD6CE /* AppDelegate.swift */,
+				844BF0C321EE1E85004CD6CE /* FruitListModule */,
+				844BF0DE21EF4AA5004CD6CE /* FruitDetail */,
+				844BF0A721EE1959004CD6CE /* Assets.xcassets */,
+				844BF0A921EE1959004CD6CE /* LaunchScreen.storyboard */,
+				844BF0AC21EE1959004CD6CE /* Info.plist */,
+				844BF0A421EE1958004CD6CE /* Viper.xcdatamodeld */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		844BF0B421EE1959004CD6CE /* ViperTests */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0B521EE1959004CD6CE /* ViperTests.swift */,
+				844BF0B721EE1959004CD6CE /* Info.plist */,
+			);
+			path = ViperTests;
+			sourceTree = "<group>";
+		};
+		844BF0C021EE1DD4004CD6CE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0C121EE1E5A004CD6CE /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		844BF0C321EE1E85004CD6CE /* FruitListModule */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0C021EE1DD4004CD6CE /* Common */,
+				844BF0C421EE1F08004CD6CE /* View */,
+				844BF0C521EE1F6F004CD6CE /* Interactor */,
+				844BF0C821EE1FBF004CD6CE /* Presenter */,
+				844BF0CB21EE1FE7004CD6CE /* Entity */,
+				844BF0CE21EE2080004CD6CE /* Router */,
+			);
+			path = FruitListModule;
+			sourceTree = "<group>";
+		};
+		844BF0C421EE1F08004CD6CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0DA21EF35AD004CD6CE /* FruitListViewProtocol.swift */,
+				844BF09F21EE1958004CD6CE /* FruitListViewController.swift */,
+				844BF0A121EE1958004CD6CE /* FruitList.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		844BF0C521EE1F6F004CD6CE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0D621EF2FDD004CD6CE /* FruitListInputInteractorProtocol.swift */,
+				844BF0DC21EF35DA004CD6CE /* FruitListOutputInteractorProtocol.swift */,
+				844BF0C621EE1FB9004CD6CE /* FruitListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		844BF0C821EE1FBF004CD6CE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0D821EF3138004CD6CE /* FruitListPresenterProtocol.swift */,
+				844BF0C921EE1FDD004CD6CE /* FruitListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		844BF0CB21EE1FE7004CD6CE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0CC21EE2079004CD6CE /* Fruit.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		844BF0CE21EE2080004CD6CE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0D421EF2E96004CD6CE /* FruitListWireRouterProtocol.swift */,
+				844BF0CF21EE20A7004CD6CE /* FruitListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		844BF0DE21EF4AA5004CD6CE /* FruitDetail */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0E921EF4FB6004CD6CE /* Presenter */,
+				844BF0E421EF4E8B004CD6CE /* Router */,
+				844BF0E121EF4AC7004CD6CE /* View */,
+			);
+			path = FruitDetail;
+			sourceTree = "<group>";
+		};
+		844BF0E121EF4AC7004CD6CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0EC21EF500C004CD6CE /* FruitDetailViewProtocol.swift */,
+				844BF0DF21EF4AC3004CD6CE /* FruitDetailViewController.swift */,
+				844BF0E221EF4ADB004CD6CE /* FruitDetail.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		844BF0E421EF4E8B004CD6CE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0E721EF4EC8004CD6CE /* FruitDetailRouterProtocol.swift */,
+				844BF0E521EF4EA3004CD6CE /* FruitDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		844BF0E921EF4FB6004CD6CE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				844BF0EA21EF4FE8004CD6CE /* FruitDetailPresenterProtocol.swift */,
+				844BF0EE21EF506A004CD6CE /* FruitDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		844BF09921EE1958004CD6CE /* Viper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844BF0BA21EE1959004CD6CE /* Build configuration list for PBXNativeTarget "Viper" */;
+			buildPhases = (
+				844BF09621EE1958004CD6CE /* Sources */,
+				844BF09721EE1958004CD6CE /* Frameworks */,
+				844BF09821EE1958004CD6CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Viper;
+			productName = Viper;
+			productReference = 844BF09A21EE1958004CD6CE /* Viper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		844BF0B021EE1959004CD6CE /* ViperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844BF0BD21EE1959004CD6CE /* Build configuration list for PBXNativeTarget "ViperTests" */;
+			buildPhases = (
+				844BF0AD21EE1959004CD6CE /* Sources */,
+				844BF0AE21EE1959004CD6CE /* Frameworks */,
+				844BF0AF21EE1959004CD6CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				844BF0B321EE1959004CD6CE /* PBXTargetDependency */,
+			);
+			name = ViperTests;
+			productName = ViperTests;
+			productReference = 844BF0B121EE1959004CD6CE /* ViperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		844BF09221EE1958004CD6CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Евгений Зверик";
+				TargetAttributes = {
+					844BF09921EE1958004CD6CE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					844BF0B021EE1959004CD6CE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 844BF09921EE1958004CD6CE;
+					};
+				};
+			};
+			buildConfigurationList = 844BF09521EE1958004CD6CE /* Build configuration list for PBXProject "Viper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 844BF09121EE1958004CD6CE;
+			productRefGroup = 844BF09B21EE1958004CD6CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				844BF09921EE1958004CD6CE /* Viper */,
+				844BF0B021EE1959004CD6CE /* ViperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		844BF09821EE1958004CD6CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844BF0AB21EE1959004CD6CE /* LaunchScreen.storyboard in Resources */,
+				844BF0A821EE1959004CD6CE /* Assets.xcassets in Resources */,
+				844BF0E321EF4ADB004CD6CE /* FruitDetail.storyboard in Resources */,
+				844BF0A321EE1958004CD6CE /* FruitList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844BF0AF21EE1959004CD6CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		844BF09621EE1958004CD6CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844BF0E621EF4EA3004CD6CE /* FruitDetailRouter.swift in Sources */,
+				844BF0DD21EF35DA004CD6CE /* FruitListOutputInteractorProtocol.swift in Sources */,
+				844BF0C221EE1E5A004CD6CE /* Common.swift in Sources */,
+				844BF0D921EF3138004CD6CE /* FruitListPresenterProtocol.swift in Sources */,
+				844BF0A021EE1958004CD6CE /* FruitListViewController.swift in Sources */,
+				844BF0EB21EF4FE8004CD6CE /* FruitDetailPresenterProtocol.swift in Sources */,
+				844BF09E21EE1958004CD6CE /* AppDelegate.swift in Sources */,
+				844BF0E821EF4EC8004CD6CE /* FruitDetailRouterProtocol.swift in Sources */,
+				844BF0D521EF2E96004CD6CE /* FruitListWireRouterProtocol.swift in Sources */,
+				844BF0D021EE20A7004CD6CE /* FruitListRouter.swift in Sources */,
+				844BF0CA21EE1FDD004CD6CE /* FruitListPresenter.swift in Sources */,
+				844BF0D721EF2FDD004CD6CE /* FruitListInputInteractorProtocol.swift in Sources */,
+				844BF0CD21EE2079004CD6CE /* Fruit.swift in Sources */,
+				844BF0C721EE1FB9004CD6CE /* FruitListInteractor.swift in Sources */,
+				844BF0A621EE1958004CD6CE /* Viper.xcdatamodeld in Sources */,
+				844BF0E021EF4AC3004CD6CE /* FruitDetailViewController.swift in Sources */,
+				844BF0ED21EF500C004CD6CE /* FruitDetailViewProtocol.swift in Sources */,
+				844BF0DB21EF35AD004CD6CE /* FruitListViewProtocol.swift in Sources */,
+				844BF0EF21EF506B004CD6CE /* FruitDetailPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844BF0AD21EE1959004CD6CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844BF0B621EE1959004CD6CE /* ViperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		844BF0B321EE1959004CD6CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 844BF09921EE1958004CD6CE /* Viper */;
+			targetProxy = 844BF0B221EE1959004CD6CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		844BF0A121EE1958004CD6CE /* FruitList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844BF0A221EE1958004CD6CE /* Base */,
+			);
+			name = FruitList.storyboard;
+			sourceTree = "<group>";
+		};
+		844BF0A921EE1959004CD6CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844BF0AA21EE1959004CD6CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		844BF0B821EE1959004CD6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		844BF0B921EE1959004CD6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		844BF0BB21EE1959004CD6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3U2JV262X;
+				INFOPLIST_FILE = Viper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.EZ.Muzh-na-chas.Viper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		844BF0BC21EE1959004CD6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3U2JV262X;
+				INFOPLIST_FILE = Viper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.EZ.Muzh-na-chas.Viper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		844BF0BE21EE1959004CD6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3U2JV262X;
+				INFOPLIST_FILE = ViperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.EZ.Muzh-na-chas.ViperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viper.app/Viper";
+			};
+			name = Debug;
+		};
+		844BF0BF21EE1959004CD6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3U2JV262X;
+				INFOPLIST_FILE = ViperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.EZ.Muzh-na-chas.ViperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viper.app/Viper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		844BF09521EE1958004CD6CE /* Build configuration list for PBXProject "Viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844BF0B821EE1959004CD6CE /* Debug */,
+				844BF0B921EE1959004CD6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844BF0BA21EE1959004CD6CE /* Build configuration list for PBXNativeTarget "Viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844BF0BB21EE1959004CD6CE /* Debug */,
+				844BF0BC21EE1959004CD6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844BF0BD21EE1959004CD6CE /* Build configuration list for PBXNativeTarget "ViperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844BF0BE21EE1959004CD6CE /* Debug */,
+				844BF0BF21EE1959004CD6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		844BF0A421EE1958004CD6CE /* Viper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				844BF0A521EE1958004CD6CE /* Viper.xcdatamodel */,
+			);
+			currentVersion = 844BF0A521EE1958004CD6CE /* Viper.xcdatamodel */;
+			path = Viper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 844BF09221EE1958004CD6CE /* Project object */;
+}
